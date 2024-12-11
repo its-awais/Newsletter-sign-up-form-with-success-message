@@ -15,7 +15,7 @@ const Newsletter = () => {
   }
   const handleChange = (e)=>{
    e.preventDefault()
-   if(matchingEmail(email)){
+   if(matchingEmail(email)){//{state:{email}} const email = location.state?.email this approach is best sometime
     setError("");
     navigate("/thankYou",{ state: { email } });
    
